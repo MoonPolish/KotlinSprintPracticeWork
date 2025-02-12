@@ -1,7 +1,7 @@
 package org.example.lesson_11
 
 // Класс, представляющий участника
-data class User(
+class User(
     val nickname: String, // Имя пользователя
     val avatarUrl: String, // URL аватара пользователя
 )
