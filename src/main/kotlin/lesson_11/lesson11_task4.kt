@@ -2,30 +2,28 @@ package org.example.lesson_11
 
 fun main() {
 
-    // Сущность категории рецепта
     class RecipeCategory(
-        val id: Int, // Идентификатор категории
-        val name: String, // Название категории
+        val id: Int,
+        val name: String,
+        val recipeName: String,
     ) {
     }
 
-    // Сущность ингридиента
     class Ingridient(
-        val name: String, // Название ингридиента
-        val quantity: Int, // Количество ингридиента
-        val units: String // Единицы измерения
+        val name: String,
+        val quantity: Int,
+        val units: String
     ) {
     }
 
-    // Сущность рецепта
     class Recipe(
-        val id: Int, // Идентификатор рецепта
-        val name: String, // Название рецепта
-        val category: String, // Категория рецепта
-        val quantityOfServings: Int, // Количество порций
-        val ingridients: List<Ingridient>, // Список ингридиентов
-        val quantityPortions: Int, // Количество порций
-        val instructions: String, // Способ приготовления
+        val id: Int,
+        val name: String,
+        val category: String,
+        val quantityOfServings: Int,
+        val ingridients: List<Ingridient>,
+        val quantityPortions: Int,
+        val instructions: String,
     ) {
     }
 }
