@@ -2,14 +2,7 @@ package org.example.lesson_11
 
 fun main() {
 
-    class RecipeCategory(
-        val id: Int,
-        val name: String,
-        val recipeName: String,
-    ) {
-    }
-
-    class Ingridient(
+    class Ingredient(
         val name: String,
         val quantity: Int,
         val units: String
@@ -21,9 +14,16 @@ fun main() {
         val name: String,
         val category: String,
         val quantityOfServings: Int,
-        val ingridients: List<Ingridient>,
+        val ingridients: List<Ingredient>,
         val quantityPortions: Int,
         val instructions: String,
+    ) {
+    }
+
+    class RecipeCategory(
+        val id: Int,
+        val name: String,
+        val recipeName: List<Recipe>,
     ) {
     }
 }
